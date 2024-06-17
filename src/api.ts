@@ -21,7 +21,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-
+var Buffer = require('buffer/').Buffer
+global.Buffer = Buffer
 export {default as BaseFilter} from './base-filter'
 export {default as BloomFilter} from './bloom/bloom-filter'
 export {default as BitSet} from './bloom/bit-set'
